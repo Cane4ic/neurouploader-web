@@ -51,7 +51,7 @@ function Home({ t, isLoggedIn }: { t: any, isLoggedIn: boolean }) {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 flex flex-col items-center justify-center text-center">
-        <h1 className="flex items-center justify-center select-none w-fit mx-auto mb-8 text-5xl sm:text-7xl md:text-9xl h-[1.2em]">
+        <h1 className="flex items-center justify-center select-none w-fit mx-auto mb-8 text-4xl sm:text-6xl md:text-8xl h-[1.2em]">
           <NULogo className="h-full w-auto max-w-full" />
         </h1>
         <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
@@ -215,7 +215,7 @@ function Home({ t, isLoggedIn }: { t: any, isLoggedIn: boolean }) {
           {t.ourPartners}
         </h2>
         <div className="flex justify-center items-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-          <img src="/Union.svg" alt="Dolphin{anty}" className="h-12 md:h-16 w-auto" />
+          <img src="/Union.svg" alt="Dolphin{anty}" className="h-8 md:h-10 w-auto" />
         </div>
       </section>
     </main>
@@ -544,7 +544,7 @@ export default function App() {
         <div className="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-8 py-2 flex items-center justify-between gap-2">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center select-none cursor-pointer shrink-0 w-fit h-10 sm:h-12 md:h-14">
+          <Link to="/" className="flex items-center select-none cursor-pointer shrink-0 w-fit h-7 sm:h-9 md:h-10">
             <NULogo className="h-full w-auto" />
           </Link>
 
