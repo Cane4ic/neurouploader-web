@@ -3,8 +3,8 @@ import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import { ChevronDown, LayoutGrid, Users, Image as ImageIcon, Flame, Rocket, Key, BookMarked, Check, Star, Headset, Mail, Settings, Shield, Bell, LogOut } from 'lucide-react';
 import { translations, Language } from './translations';
 
-const NULogo = ({ className = "h-[0.72em] w-auto" }) => (
-  <img src="/logo.svg" alt="Logo" className={className} />
+const NULogo = ({ className = "h-full w-auto" }) => (
+  <img src="/logo.svg" alt="Logo" className={`${className} object-contain`} />
 );
 
 const TelegramIcon = ({ size = 24, className = "" }) => (
@@ -51,8 +51,8 @@ function Home({ t, isLoggedIn }: { t: any, isLoggedIn: boolean }) {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 flex flex-col items-center justify-center text-center">
-        <h1 className="flex items-center justify-center select-none w-fit mx-auto mb-8 text-5xl sm:text-7xl md:text-9xl">
-          <NULogo className="h-[1.2em] w-auto max-w-full" />
+        <h1 className="flex items-center justify-center select-none w-fit mx-auto mb-8 text-5xl sm:text-7xl md:text-9xl h-[1.2em]">
+          <NULogo className="h-full w-auto max-w-full" />
         </h1>
         <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
           {t.heroDescription}
@@ -544,8 +544,8 @@ export default function App() {
         <div className="max-w-[1440px] mx-auto px-3 sm:px-4 md:px-8 py-2 flex items-center justify-between gap-2">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center select-none cursor-pointer shrink-0 w-fit text-3xl sm:text-4xl md:text-5xl -my-2">
-            <NULogo className="h-[1.5em] w-auto" />
+          <Link to="/" className="flex items-center select-none cursor-pointer shrink-0 w-fit h-10 sm:h-12 md:h-14">
+            <NULogo className="h-full w-auto" />
           </Link>
 
           {/* Navigation & Actions */}
